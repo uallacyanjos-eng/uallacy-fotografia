@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Uallacy Anjos Fotografia | Conceição do Coité, BA</title>
+<meta name="description" content="Ensaios ao ar livre, fotos de comércio, cobertura de eventos e fotos de produtos em Conceição do Coité e região. Veja os valores e peça seu orçamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12343B;--paper:#F7F1E8;--sage:#4F6B70;--sun:#E8836B;--line:#E2D7C6;--white:#fff;--sand:#EFE4D3}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.05;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+
+header.top{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{font:800 1.05rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav{display:flex;gap:20px;font-size:.95rem;font-weight:500}
+nav a{text-decoration:none;color:var(--sage)}
+nav a:hover{color:var(--ink)}
+
+.hero{padding:56px 0 72px}
+.frame{position:relative;padding:44px 30px 40px;max-width:720px;margin:0 auto}
+.frame i{position:absolute;width:34px;height:34px;border:3px solid var(--ink);animation:snap .7s cubic-bezier(.2,.8,.2,1) both}
+.frame i:nth-child(1){top:0;left:0;border-right:0;border-bottom:0}
+.frame i:nth-child(2){top:0;right:0;border-left:0;border-bottom:0}
+.frame i:nth-child(3){bottom:0;left:0;border-right:0;border-top:0}
+.frame i:nth-child(4){bottom:0;right:0;border-left:0;border-top:0}
+@keyframes snap{from{transform:scale(1.5);opacity:0}to{transform:none;opacity:1}}
+.hero h1{font-size:clamp(3rem,13vw,6.4rem);font-weight:800}
+.hero .sub{margin-top:18px;font-size:1.2rem;color:var(--sage);font-weight:500}
+.hero p.lead{margin-top:14px;max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--sun);border-color:var(--sun);color:#1b1b1b}
+.btn.main:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.btn.alt:hover{background:var(--ink);color:var(--paper)}
+
+section{padding:64px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:10px}
+.intro{color:var(--sage);max-width:56ch;margin-bottom:34px}
+
+.cat{margin-top:44px}
+.cat h3{font-size:1.6rem;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.cat h3 a{font:700 .95rem "DM Sans",sans-serif;color:var(--sage)}
+.cat h3 a:hover{color:var(--ink)}
+.cat .desc{color:var(--sage);margin:4px 0 14px;font-size:1rem}
+.row{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:16px 0;border-top:1px solid var(--line);align-items:baseline}
+.row:last-of-type{border-bottom:1px solid var(--line)}
+.row b{font-weight:700}
+.row small{display:block;color:var(--sage);font-size:.95rem}
+.price{font:800 1.5rem "Bricolage Grotesque",sans-serif;white-space:nowrap}
+.price em{font:500 .9rem "DM Sans",sans-serif;font-style:normal;color:var(--sage)}
+.extras{margin-top:14px;padding-left:18px;color:var(--sage);font-size:.98rem}
+.extras li{margin:3px 0}
+
+
+#sobre{background:var(--sand)}
+.sobre{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:40px;align-items:center}
+.foto{aspect-ratio:4/5;background:var(--line);border:3px solid var(--ink);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--sage);font-weight:500;padding:20px}
+.foto img{width:100%;height:100%;object-fit:cover;display:block}
+.sobre h2{margin-bottom:16px}
+.sobre p{margin-bottom:14px;max-width:56ch}
+.sobre .gancho{font:700 1.35rem/1.25 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
+@media (max-width:700px){.sobre{grid-template-columns:1fr;gap:24px}.foto{max-width:320px}}
+#portfolio{display:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.grid img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+
+.terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px 36px;margin-top:26px}
+.terms h3{font-size:1.15rem;margin-bottom:4px}
+.terms p{color:var(--sage);font-size:1rem}
+
+footer{background:var(--ink);color:var(--paper);padding:64px 0 calc(40px + env(safe-area-inset-bottom,0))}
+footer h2{font-size:clamp(2rem,7vw,3.4rem);margin-bottom:10px}
+footer p{max-width:46ch;opacity:.85}
+footer .btn.alt{border-color:var(--paper)}
+footer .btn.alt:hover{background:var(--paper);color:var(--ink)}
+footer small{display:block;margin-top:46px;opacity:.6;font-size:.9rem}
+
+.zap{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0));z-index:6;background:var(--sun);color:#1b1b1b;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:999px;box-shadow:0 4px 14px rgba(18,52,59,.3)}
+
+@media (max-width:560px){nav{display:none}.frame{padding:36px 20px 32px}.price{font-size:1.3rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio">Uallacy Anjos</a>
+    <nav aria-label="Menu principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#valores">Valores</a>
+      <a href="#portfolio" id="navPortfolio" hidden>Portfólio</a>
+      <a href="#condicoes">Condições</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <div class="frame">
+        <i></i><i></i><i></i><i></i>
+        <h1>Uallacy Anjos</h1>
+        <p class="sub">Fotografia em Conceição do Coité e região</p>
+        <p class="lead">Ensaios ao ar livre, fotos de comércio, cobertura de eventos e fotos de produtos para loja. Imagens bem cuidadas, editadas e entregues no prazo.</p>
+        <div class="cta">
+          <a class="btn main" data-zap="Olá, Uallacy! Vi seu site e gostaria de fazer um orçamento." href="#">Pedir orçamento no WhatsApp</a>
+          <a class="btn alt" href="#valores">Ver valores</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="sobre">
+    <div class="wrap sobre">
+      <div class="foto" id="minhaFoto">Sua foto aqui<br>(salve como fotos/uallacy.jpg)</div>
+      <div>
+        <h2>Prazer, eu sou o Uallacy</h2>
+        <p class="gancho">Você já olhou para uma foto sua e pensou: ainda bem que alguém me fez rir naquele dia?</p>
+        <p>É isso que eu faço. Sou fotógrafo em Conceição do Coité, e meu trabalho é registrar o que você tem de melhor, sem pose forçada e sem aquele constrangimento de câmera.</p>
+        <p>Converso, brinco e conduzo cada sessão para que você se sinta à vontade. O resultado? Fotos naturais, bem tratadas e entregues no prazo.</p>
+        <p>Seja um ensaio, a fachada da sua loja, a festa da família ou os produtos do seu negócio, eu cuido de tudo com carinho e qualidade. Dá uma olhada nos valores logo abaixo e me chama no WhatsApp. Aposto que você vai gostar do resultado.</p>
+        <div class="cta"><a class="btn main" data-zap="Olá, Uallacy! Li sua apresentação e gostei. Quero um orçamento." href="#">Quero meu orçamento</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="valores">
+    <div class="wrap">
+      <h2>Serviços e valores</h2>
+      <p class="intro">Escolha o pacote que combina com o que você precisa. Se quiser algo diferente, a gente monta um orçamento sob medida.</p>
+      <div id="catalogo"></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <h2>Portfólio</h2>
+      <p class="intro">Alguns dos meus trabalhos.</p>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="condicoes">
+    <div class="wrap">
+      <h2>Como funciona</h2>
+      <div class="terms">
+        <div><h3>Reserva</h3><p>Sinal de 30% para garantir a data. O restante é pago no dia ou na entrega.</p></div>
+        <div><h3>Prazo de entrega</h3><p>Ensaios e comércio em 7 dias, eventos em 10 dias e produtos em 5 dias.</p></div>
+        <div><h3>Entrega das fotos</h3><p>Galeria online com download em alta resolução.</p></div>
+        <div><h3>Pagamento</h3><p>Pix com 5% de desconto, ou cartão em até 3x.</p></div>
+        <div><h3>Cancelamento</h3><p>Com menos de 48h de aviso, o sinal não é reembolsado.</p></div>
+        <div><h3>Fotos sem edição</h3><p>Cobradas à parte, a 50% do valor do pacote.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contato">
+  <div class="wrap">
+    <h2>Vamos marcar o seu?</h2>
+    <p>Me chame no WhatsApp contando o que você precisa e a data. Respondo com o orçamento.</p>
+    <div class="cta">
+      <a class="btn main" data-zap="Olá, Uallacy! Gostaria de marcar uma sessão." href="#">Chamar no WhatsApp</a>
+      <a class="btn alt" href="https://instagram.com/uallacy_anjos" target="_blank" rel="noopener">@uallacy_anjos no Instagram</a>
+    </div>
+    <small>© 2026 Uallacy Anjos Fotografia · Conceição do Coité, Bahia</small>
+  </div>
+</footer>
+
+<a class="zap" data-zap="Olá, Uallacy! Gostaria de um orçamento." href="#" aria-label="Chamar no WhatsApp">WhatsApp</a>
+
+<script>
+var FONE = "5561981146695";
+function zapLink(t){ return "https://wa.me/" + FONE + "?text=" + encodeURIComponent(t); }
+
+var CATS = [
+ { id:"ensaios", nome:"Ensaios ao ar livre", desc:"Luz natural, direção de pose e edição cuidadosa.",
+   itens:[
+    ["Essencial","Individual ou casal · 1h · 15 fotos editadas","300"],
+    ["Família ou gestante","1h30 · 25 fotos editadas","450"],
+    ["Book completo","2h · 40 fotos editadas · 2 locações","650"],
+    ["Premium","2h30 · 60 fotos editadas · 2 locações · 5 fotos impressas 15x21","900"]],
+   extras:["Foto extra editada: R$ 15","Troca de figurino extra: R$ 50","Deslocamento fora de Coité: R$ 1,50 por km"] },
+ { id:"comercio", nome:"Fotos de comércio", desc:"Fachada, ambiente, equipe e detalhes para redes sociais e anúncios.",
+   itens:[
+    ["Básico","Fachada e ambiente · 1h · 10 fotos","350"],
+    ["Completo","Ambiente, equipe e detalhes · 2h · 25 fotos","650"],
+    ["Corporativo","Inclui retratos da equipe · 3h · 40 fotos","950"]],
+   extras:["Retrato individual extra: R$ 60","Licença de uso comercial e anúncios inclusa"] },
+ { id:"eventos", nome:"Cobertura de eventos", desc:"Aniversários, formaturas, festas e eventos. Fotos tratadas.",
+   itens:[
+    ["Mini evento","Aniversário infantil, chá · 2h · 50 a 80 fotos","450"],
+    ["Evento médio","4h · 120 a 200 fotos","900"],
+    ["Evento grande","Formatura, festa, casamento civil · 6h · 250 a 400 fotos","1.600"],
+    ["Dia todo","8h · mais de 400 fotos","2.200"]],
+   extras:["Hora extra: R$ 120","Segundo fotógrafo: R$ 400 por evento","Entrega em 48h: R$ 150","Álbum impresso 20x30, 20 páginas: R$ 450"] },
+ { id:"produtos", nome:"Fotos de produtos", desc:"Para loja online, catálogo e Instagram. Fundo limpo e edição padronizada.",
+   itens:[
+    ["Foto avulsa","Fundo branco · 1 foto","25"],
+    ["Pacote 10","10 fotos com fundo branco","200"],
+    ["Pacote 30","30 fotos · inclui fotos de estilo","550"],
+    ["Catálogo","A partir de 50 produtos","20|por foto"]],
+   extras:["Foto de produto em uso, com modelo: R$ 60 cada","Vídeo curto de 15 a 30s: R$ 120 cada","Modelo contratado: custo repassado ao cliente"] }
+];
+
+var html = "";
+CATS.forEach(function(c){
+  var msg = "Olá, Uallacy! Tenho interesse em: " + c.nome + ".";
+  html += '<div class="cat" id="' + c.id + '"><h3>' + c.nome +
+          '<a data-zap="' + msg + '" href="#">Pedir orçamento</a></h3><p class="desc">' + c.desc + '</p>';
+  c.itens.forEach(function(i){
+    var p = i[2].split("|");
+    html += '<div class="row"><div><b>' + i[0] + '</b><small>' + i[1] + '</small></div>' +
+            '<div class="price">R$ ' + p[0] + (p[1] ? ' <em>' + p[1] + '</em>' : '') + '</div></div>';
+  });
+  html += '<ul class="extras">' + c.extras.map(function(e){ return "<li>" + e + "</li>"; }).join("") + '</ul></div>';
+});
+document.getElementById("catalogo").innerHTML = html;
+
+document.querySelectorAll("[data-zap]").forEach(function(a){
+  a.href = zapLink(a.getAttribute("data-zap"));
+  a.target = "_blank"; a.rel = "noopener";
+});
+
+
+var fotoEu = new Image();
+fotoEu.alt = "Uallacy Anjos, fotógrafo em Conceição do Coité";
+fotoEu.onload = function(){ var b=document.getElementById("minhaFoto"); b.innerHTML=""; b.style.padding="0"; b.appendChild(fotoEu); };
+fotoEu.src = "fotos/uallacy.jpg";
+
+/* Portfólio: coloque suas fotos na pasta "fotos" com os nomes 01.jpg, 02.jpg ... 12.jpg.
+   A seção só aparece se encontrar pelo menos uma foto. */
+var grid = document.getElementById("grid"), achou = false;
+for (var n = 1; n <= 12; n++) {
+  (function(num){
+    var nome = (num < 10 ? "0" : "") + num + ".jpg";
+    var img = new Image();
+    img.alt = "Foto do portfólio de Uallacy Anjos";
+    img.loading = "lazy";
+    img.onload = function(){
+      grid.appendChild(img);
+      if (!achou) {
+        achou = true;
+        document.getElementById("portfolio").style.display = "block";
+        document.getElementById("navPortfolio").hidden = false;
+      }
+    };
+    img.src = "fotos/" + nome;
+  })(n);
+}
+</script>
+</body>
+</html>
