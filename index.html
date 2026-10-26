@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Uallacy Anjos Fotografia | Conceição do Coité, BA</title>
-<meta name="description" content="Ensaios ao ar livre, fotos de comércio, cobertura de eventos e fotos de produtos em Conceição do Coité e região. Veja os valores e peça seu orçamento.">
+<meta name="description" content="Fotografia esportiva, fotos de comércio e de produtos e criação de sites em Conceição do Coité e região. Veja os valores e peça seu orçamento.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -69,6 +69,17 @@ section h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:10px}
 .sobre p{margin-bottom:14px;max-width:56ch}
 .sobre .gancho{font:700 1.35rem/1.25 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
 @media (max-width:700px){.sobre{grid-template-columns:1fr;gap:24px}.foto{max-width:320px}}
+.consulta{margin-top:48px;padding:22px 24px;background:var(--sand);border-left:4px solid var(--sun)}
+.consulta p{max-width:60ch}
+.consulta a{font-weight:700}
+.triade{margin-top:18px}
+
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.filtros button{font:700 .95rem "DM Sans",sans-serif;padding:9px 18px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.filtros button:hover{background:var(--sand)}
+.filtros button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.grid figure{margin:0}
+.grid figure[hidden]{display:none}
 #portfolio{display:none}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .grid img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
@@ -98,6 +109,7 @@ footer small{display:block;margin-top:46px;opacity:.6;font-size:.9rem}
     <nav aria-label="Menu principal">
       <a href="#sobre">Sobre</a>
       <a href="#valores">Valores</a>
+      <a href="https://triadephotos.com.br/" target="_blank" rel="noopener">Tríade</a>
       <a href="#portfolio" id="navPortfolio" hidden>Portfólio</a>
       <a href="#condicoes">Condições</a>
       <a href="https://instagram.com/uallacy_anjos" target="_blank" rel="noopener">Instagram</a>
@@ -112,11 +124,12 @@ footer small{display:block;margin-top:46px;opacity:.6;font-size:.9rem}
       <div class="frame">
         <i></i><i></i><i></i><i></i>
         <h1>Uallacy Anjos</h1>
-        <p class="sub">Fotografia em Conceição do Coité e região</p>
-        <p class="lead">Ensaios ao ar livre, fotos de comércio, cobertura de eventos e fotos de produtos para loja. Imagens bem cuidadas, editadas e entregues no prazo.</p>
+        <p class="sub">Fotografia esportiva e comercial em Conceição do Coité e região</p>
+        <p class="lead">Fotografia esportiva, fotos de comércio e de produtos, e criação de sites para quem quer vender mais. Imagens bem cuidadas, editadas e entregues no prazo.</p>
         <div class="cta">
           <a class="btn main" data-zap="Olá, Uallacy! Vi seu site e gostaria de fazer um orçamento." href="#">Pedir orçamento no WhatsApp</a>
           <a class="btn alt" href="#valores">Ver valores</a>
+          <a class="btn alt" href="https://triadephotos.com.br/" target="_blank" rel="noopener">Fotos na Tríade Imagens</a>
           <a class="btn alt" href="https://instagram.com/uallacy_anjos" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
@@ -131,7 +144,7 @@ footer small{display:block;margin-top:46px;opacity:.6;font-size:.9rem}
         <p class="gancho">Você já olhou para uma foto sua e pensou: ainda bem que alguém me fez rir naquele dia?</p>
         <p>É isso que eu faço. Sou fotógrafo em Conceição do Coité, e meu trabalho é registrar o que você tem de melhor, sem pose forçada e sem aquele constrangimento de câmera.</p>
         <p>Converso, brinco e conduzo cada sessão para que você se sinta à vontade. O resultado? Fotos naturais, bem tratadas e entregues no prazo.</p>
-        <p>Seja um ensaio, a fachada da sua loja, a festa da família ou os produtos do seu negócio, eu cuido de tudo com carinho e qualidade. Dá uma olhada nos valores logo abaixo e me chama no WhatsApp. Aposto que você vai gostar do resultado.</p>
+        <p>Seja a corrida da sua cidade, a fachada da sua loja ou os produtos do seu negócio, eu cuido de tudo com carinho e qualidade. Dá uma olhada nos valores logo abaixo e me chama no WhatsApp. Aposto que você vai gostar do resultado.</p>
         <div class="cta"><a class="btn main" data-zap="Olá, Uallacy! Li sua apresentação e gostei. Quero um orçamento." href="#">Quero meu orçamento</a></div>
       </div>
     </div>
@@ -140,15 +153,17 @@ footer small{display:block;margin-top:46px;opacity:.6;font-size:.9rem}
   <section id="valores">
     <div class="wrap">
       <h2>Serviços e valores</h2>
-      <p class="intro">Escolha o pacote que combina com o que você precisa. Se quiser algo diferente, a gente monta um orçamento sob medida.</p>
+      <p class="intro">Escolha o que combina com o que você precisa. Se quiser algo diferente, a gente monta um orçamento sob medida.</p>
       <div id="catalogo"></div>
+      <div class="consulta"><p>Faço também ensaios, casamentos, formaturas e outros eventos <b>sob consulta</b>. Me chama no <a data-zap="Olá, Uallacy! Queria um orçamento de um trabalho que não está na lista." href="#">WhatsApp</a> contando o que você precisa.</p></div>
     </div>
   </section>
 
   <section id="portfolio">
     <div class="wrap">
       <h2>Portfólio</h2>
-      <p class="intro">Alguns dos meus trabalhos.</p>
+      <p class="intro">Alguns dos esportes que eu fotografo. Clique para ver cada um.</p>
+      <div class="filtros" id="filtros" role="group" aria-label="Filtrar por esporte"></div>
       <div class="grid" id="grid"></div>
     </div>
   </section>
@@ -158,7 +173,7 @@ footer small{display:block;margin-top:46px;opacity:.6;font-size:.9rem}
       <h2>Como funciona</h2>
       <div class="terms">
         <div><h3>Reserva</h3><p>Sinal de 30% para garantir a data. O restante é pago no dia ou na entrega.</p></div>
-        <div><h3>Prazo de entrega</h3><p>Ensaios e comércio em 7 dias, eventos em 10 dias e produtos em 5 dias.</p></div>
+        <div><h3>Prazo de entrega</h3><p>Comércio em 7 dias, produtos em 5 dias e sites em 5 a 7 dias. Fotos institucionais de eventos combinadas caso a caso.</p></div>
         <div><h3>Entrega das fotos</h3><p>Galeria online com download em alta resolução.</p></div>
         <div><h3>Pagamento</h3><p>Pix com 5% de desconto, ou cartão em até 3x.</p></div>
         <div><h3>Cancelamento</h3><p>Com menos de 48h de aviso, o sinal não é reembolsado.</p></div>
@@ -170,10 +185,10 @@ footer small{display:block;margin-top:46px;opacity:.6;font-size:.9rem}
 
 <footer id="contato">
   <div class="wrap">
-    <h2>Vamos marcar o seu?</h2>
-    <p>Me chame no WhatsApp contando o que você precisa e a data. Respondo com o orçamento.</p>
+    <h2>Organiza corrida ou evento esportivo?</h2>
+    <p>Me chama no WhatsApp contando o nome do evento e a data. Eu explico como a parceria funciona e a gente combina o melhor para vocês. Para os outros serviços, é só dizer o que precisa que eu respondo com o orçamento.</p>
     <div class="cta">
-      <a class="btn main" data-zap="Olá, Uallacy! Gostaria de marcar uma sessão." href="#">Chamar no WhatsApp</a>
+      <a class="btn main" data-zap="Olá, Uallacy! Organizo um evento esportivo e quero saber como funciona a parceria." href="#">Chamar no WhatsApp</a>
       <a class="btn alt" href="https://instagram.com/uallacy_anjos" target="_blank" rel="noopener">@uallacy_anjos no Instagram</a>
     </div>
     <small>© 2026 Uallacy Anjos Fotografia · Conceição do Coité, Bahia</small>
@@ -187,33 +202,31 @@ var FONE = "5561981146695";
 function zapLink(t){ return "https://wa.me/" + FONE + "?text=" + encodeURIComponent(t); }
 
 var CATS = [
- { id:"ensaios", nome:"Ensaios ao ar livre", desc:"Luz natural, direção de pose e edição cuidadosa.",
+ { id:"esporte", nome:"Fotografia esportiva", desc:"Corridas, campeonatos e eventos esportivos. Cobertura completa, com as fotos dos atletas à venda na Tríade Imagens.",
    itens:[
-    ["Essencial","Individual ou casal · 1h · 15 fotos editadas","300"],
-    ["Família ou gestante","1h30 · 25 fotos editadas","450"],
-    ["Book completo","2h · 40 fotos editadas · 2 locações","650"],
-    ["Premium","2h30 · 60 fotos editadas · 2 locações · 5 fotos impressas 15x21","900"]],
-   extras:["Foto extra editada: R$ 15","Troca de figurino extra: R$ 50","Deslocamento fora de Coité: R$ 1,50 por km"] },
+    ["Parceria com exclusividade","Você me dá a exclusividade da cobertura e eu entrego fotos institucionais do evento, sem custo. As fotos dos atletas ficam à venda na Tríade Imagens, sem risco nenhum para a organização.","Sem custo|para o organizador"],
+    ["Pacote de divulgação","Cobertura com foco na sua marca: largada, chegada, premiação, patrocinadores e bastidores. Entrega rápida para as redes sociais.","Sob orçamento"],
+    ["Parceria com patrocinadores","Imagens pensadas para valorizar quem apoia o evento e ajudar você a fechar patrocínio na próxima edição.","Sob orçamento"]],
+   extras:["Fotos institucionais entregues depois do encerramento do evento","As fotos dos atletas ficam à venda na Tríade Imagens, com compra individual ou em pacote","Quer saber como funciona? Me chama no WhatsApp que eu explico sem enrolação"] },
  { id:"comercio", nome:"Fotos de comércio", desc:"Fachada, ambiente, equipe e detalhes para redes sociais e anúncios.",
    itens:[
     ["Básico","Fachada e ambiente · 1h · 10 fotos","350"],
     ["Completo","Ambiente, equipe e detalhes · 2h · 25 fotos","650"],
     ["Corporativo","Inclui retratos da equipe · 3h · 40 fotos","950"]],
    extras:["Retrato individual extra: R$ 60","Licença de uso comercial e anúncios inclusa"] },
- { id:"eventos", nome:"Cobertura de eventos", desc:"Aniversários, formaturas, festas e eventos. Fotos tratadas.",
-   itens:[
-    ["Mini evento","Aniversário infantil, chá · 2h · 50 a 80 fotos","450"],
-    ["Evento médio","4h · 120 a 200 fotos","900"],
-    ["Evento grande","Formatura, festa, casamento civil · 6h · 250 a 400 fotos","1.600"],
-    ["Dia todo","8h · mais de 400 fotos","2.200"]],
-   extras:["Hora extra: R$ 120","Segundo fotógrafo: R$ 400 por evento","Entrega em 48h: R$ 150","Álbum impresso 20x30, 20 páginas: R$ 450"] },
  { id:"produtos", nome:"Fotos de produtos", desc:"Para loja online, catálogo e Instagram. Fundo limpo e edição padronizada.",
    itens:[
     ["Foto avulsa","Fundo branco · 1 foto","25"],
     ["Pacote 10","10 fotos com fundo branco","200"],
     ["Pacote 30","30 fotos · inclui fotos de estilo","550"],
     ["Catálogo","A partir de 50 produtos","20|por foto"]],
-   extras:["Foto de produto em uso, com modelo: R$ 60 cada","Vídeo curto de 15 a 30s: R$ 120 cada","Modelo contratado: custo repassado ao cliente"] }
+   extras:["Foto de produto em uso, com modelo: R$ 60 cada","Vídeo curto de 15 a 30s: R$ 120 cada","Modelo contratado: custo repassado ao cliente"] },
+ { id:"sites", nome:"Criação de sites", desc:"Página única para o seu negócio, com WhatsApp, Instagram e seus serviços. Seu comércio bem apresentado no celular do cliente.",
+   itens:[
+    ["Essencial","Página única · apresentação, serviços e preços · botões de WhatsApp e Instagram · publicação no ar","500"],
+    ["Profissional","Essencial + galeria de fotos, depoimentos, mapa da loja e domínio próprio .com.br","800"],
+    ["Completo com fotos","Profissional + ensaio de fachada e ambiente · 25 fotos tratadas","1.300"]],
+   extras:["Manutenção mensal (trocar preço, foto ou texto): R$ 40 a R$ 60 por mês","Alteração avulsa: R$ 30","Texto escrito por mim: R$ 100","Domínio .com.br: cerca de R$ 40 por ano, repassado ao cliente"] }
 ];
 
 var html = "";
@@ -224,9 +237,13 @@ CATS.forEach(function(c){
   c.itens.forEach(function(i){
     var p = i[2].split("|");
     html += '<div class="row"><div><b>' + i[0] + '</b><small>' + i[1] + '</small></div>' +
-            '<div class="price">R$ ' + p[0] + (p[1] ? ' <em>' + p[1] + '</em>' : '') + '</div></div>';
+            '<div class="price">' + (/^[0-9]/.test(p[0]) ? 'R$ ' : '') + p[0] + (p[1] ? ' <em>' + p[1] + '</em>' : '') + '</div></div>';
   });
-  html += '<ul class="extras">' + c.extras.map(function(e){ return "<li>" + e + "</li>"; }).join("") + '</ul></div>';
+  html += '<ul class="extras">' + c.extras.map(function(e){ return "<li>" + e + "</li>"; }).join("") + '</ul>';
+  if (c.id === "esporte") {
+    html += '<div class="triade"><a class="btn alt" href="https://triadephotos.com.br/" target="_blank" rel="noopener">Ver fotos na Tríade Imagens</a></div>';
+  }
+  html += '</div>';
 });
 document.getElementById("catalogo").innerHTML = html;
 
@@ -241,26 +258,68 @@ fotoEu.alt = "Uallacy Anjos, fotógrafo em Conceição do Coité";
 fotoEu.onload = function(){ var b=document.getElementById("minhaFoto"); b.innerHTML=""; b.style.padding="0"; b.appendChild(fotoEu); };
 fotoEu.src = "fotos/uallacy.jpg";
 
-/* Portfólio: coloque suas fotos na pasta "fotos" com os nomes 01.jpg, 02.jpg ... 12.jpg.
-   A seção só aparece se encontrar pelo menos uma foto. */
-var grid = document.getElementById("grid"), achou = false;
-for (var n = 1; n <= 12; n++) {
-  (function(num){
-    var nome = (num < 10 ? "0" : "") + num + ".jpg";
-    var img = new Image();
-    img.alt = "Foto do portfólio de Uallacy Anjos";
-    img.loading = "lazy";
-    img.onload = function(){
-      grid.appendChild(img);
-      if (!achou) {
-        achou = true;
-        document.getElementById("portfolio").style.display = "block";
-        document.getElementById("navPortfolio").hidden = false;
-      }
-    };
-    img.src = "fotos/" + nome;
-  })(n);
+/* Portfólio por esporte.
+   Salve as fotos na pasta "fotos" com o nome do esporte e o número:
+   corrida-01.jpg, futevolei-01.jpg, natacao-01.jpg, volei-01.jpg, basquete-01.jpg, rally-01.jpg ... até o 12.
+   Só aparecem os esportes que tiverem foto. */
+var ESPORTES = [
+  { id:"corrida",   nome:"Corrida" },
+  { id:"futevolei", nome:"Futevôlei" },
+  { id:"natacao",   nome:"Natação em mar aberto" },
+  { id:"volei",     nome:"Vôlei" },
+  { id:"basquete",  nome:"Basquete" },
+  { id:"rally",     nome:"Rally" }
+];
+var grid = document.getElementById("grid");
+var filtros = document.getElementById("filtros");
+var achados = {};
+var botaoTodos = null;
+
+function mostrar(id){
+  grid.querySelectorAll("figure").forEach(function(f){
+    f.hidden = !(id === "todos" || f.getAttribute("data-esporte") === id);
+  });
+  filtros.querySelectorAll("button").forEach(function(b){
+    b.setAttribute("aria-pressed", b.getAttribute("data-id") === id ? "true" : "false");
+  });
 }
+function criarBotao(id, texto){
+  var b = document.createElement("button");
+  b.type = "button"; b.textContent = texto; b.setAttribute("data-id", id);
+  b.setAttribute("aria-pressed", "false");
+  b.addEventListener("click", function(){ mostrar(id); });
+  return b;
+}
+function registrar(esp, img){
+  var fig = document.createElement("figure");
+  fig.setAttribute("data-esporte", esp.id);
+  fig.appendChild(img);
+  grid.appendChild(fig);
+  if (!botaoTodos){
+    document.getElementById("portfolio").style.display = "block";
+    document.getElementById("navPortfolio").hidden = false;
+    botaoTodos = criarBotao("todos", "Todos");
+    filtros.appendChild(botaoTodos);
+  }
+  if (!achados[esp.id]){
+    achados[esp.id] = true;
+    filtros.appendChild(criarBotao(esp.id, esp.nome));
+  }
+  var ativo = filtros.querySelector('button[aria-pressed="true"]');
+  mostrar(ativo ? ativo.getAttribute("data-id") : "todos");
+}
+ESPORTES.forEach(function(esp){
+  for (var n = 1; n <= 12; n++){
+    (function(num){
+      var nome = esp.id + "-" + (num < 10 ? "0" : "") + num + ".jpg";
+      var img = new Image();
+      img.alt = "Foto de " + esp.nome.toLowerCase() + " por Uallacy Anjos";
+      img.loading = "lazy";
+      img.onload = function(){ registrar(esp, img); };
+      img.src = "fotos/" + nome;
+    })(n);
+  }
+});
 </script>
 </body>
 </html>
